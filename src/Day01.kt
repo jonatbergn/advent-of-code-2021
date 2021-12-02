@@ -1,4 +1,4 @@
-fun main() {
+fun main01() {
     fun part1(input: List<Int>) = input.zipWithNext().count { it.first < it.second }
     fun part2(input: List<Int>) = part1(input.windowed(size = 3, partialWindows = false) { it.sum() })
 
