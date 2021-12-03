@@ -3,11 +3,6 @@ import aoc2021.day02.Aoc2021Day02
 import aoc2021.day03.Aoc2021Day03
 import java.io.File
 
-private val solutions = listOf(
-    Aoc2021Day03 to Solution(null, null),
-    Aoc2021Day02 to Solution(150, 900),
-    Aoc2021Day01 to Solution(7, 5),
-)
 
 fun main() {
     solutions.map { (riddle, solution) ->
@@ -15,6 +10,12 @@ fun main() {
         riddle.solve("src")
     }.first().print()
 }
+
+private val solutions = listOf(
+    Aoc2021Day03 to Solution(198, 230),
+    Aoc2021Day02 to Solution(150, 900),
+    Aoc2021Day01 to Solution(7, 5),
+)
 
 interface Riddle<Input, Output> {
     val year: Int
