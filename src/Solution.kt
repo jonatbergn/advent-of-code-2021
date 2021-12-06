@@ -3,6 +3,7 @@ import aoc2021.day02.Aoc2021Day02
 import aoc2021.day03.Aoc2021Day03
 import aoc2021.day04.Aoc2021Day04
 import aoc2021.day05.Aoc2021Day05
+import aoc2021.day06.Aoc2021Day06
 import java.io.File
 
 data class Solution<Output>(
@@ -16,6 +17,7 @@ data class Solution<Output>(
 
     companion object {
         private val all = listOf(
+            Aoc2021Day06 to Solution(5934, 26984457539),
             Aoc2021Day05 to Solution(5, 12),
             Aoc2021Day04 to Solution(4512, 1924),
             Aoc2021Day03 to Solution(198, 230),
