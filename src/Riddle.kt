@@ -1,8 +1,6 @@
-interface Riddle<Input, Output> {
+interface Riddle<Output> {
     val year: Int
     val day: Int
-    val adapter1: (List<String>) -> Input
-    val adapter2: (List<String>) -> Input
-    val part1: (Input) -> Output?
-    val part2: (Input) -> Output?
+    fun part1(input: List<String>): Output?
+    fun part2(input: List<String>): Output?
 }
